@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <title>ex4</title>
+</head>
+<body>
+  <!-- this is a form wich getting back identity -->
+  <form action="index.html" method="post">
+    <ul>
+      <li>
+        <label for="lastname">Nom:</label>
+        <input id="lastname" type="text" name="lastname" placeholder="Nom"/>
+      </li>
+      <li>
+        <label for="firstname">Prénom:</label>
+        <input id="firstname" type="text" name="firstname" placeholder="Prénom"/>
+      </li>
+      <li>
+        <label for="city">Ville:</label>
+        <input id="city" type="text" name="city" placeholder="Ville"/>
+      </li>
+    </ul>
+    <input type="submit" name="submitIdentity" value="Envoyez le formulaire" onclick="dataCollect()"/>
+  </form>
+  <script type="text/javascript">
+  /*récupération des données enregistrées via le formulaire.
+  La déclaration de fonction effectue la récupération des données.*/
+  function dataCollect(){
+    // les variables permettent de stocker/récupérer les valeurs du formulaire.
+    var firstname = document.getElementById('firstname').value;
+    var lastname =document.getElementById('lastname').value;
+    var city =document.getElementById('city').value;
+    // L'alerte permet d'afficher ces données.
+    alert('Nom:'+ lastname +'\nPrénom:'+ firstname + '\nVille: '+ city);
+  }
+  </script>
+  </body>
+  </html>
