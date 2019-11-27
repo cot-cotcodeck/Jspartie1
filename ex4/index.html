@@ -25,14 +25,13 @@
     <input type="submit" name="submitIdentity" value="Envoyez le formulaire" onclick="dataCollect()"/>
   </form>
   <script type="text/javascript">
-  /*récupération des données enregistrées via le formulaire.
-  La déclaration de fonction effectue la récupération des données.*/
+  /* With function i'm getting back data from the form*/
   function dataCollect(){
-    // les variables permettent de stocker/récupérer les valeurs du formulaire.
+    // Variables may enable to get back the values about form..
     var firstname = document.getElementById('firstname').value;
     var lastname =document.getElementById('lastname').value;
     var city =document.getElementById('city').value;
-    // L'alerte permet d'afficher ces données.
+    // Alert allow to show up data.
     alert('Nom:'+ lastname +'\nPrénom:'+ firstname + '\nVille: '+ city);
   }
   </script>
